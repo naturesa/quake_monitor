@@ -1,14 +1,18 @@
 import L from "leaflet";
 
-export const defaultIcon = new L.Icon({
-  iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-gold.png",
-  iconSize: [25, 41],     // normal size
-  iconAnchor: [12, 41],   // point of the icon which will correspond to marker's location
-});
+export function getMagnitudeIcon(mag) {
+  let color = "blue";
+  if (mag >= 5) color = "red";
+  else if (mag >= 3) color = "orange";
+  else color = "yellow";
 
-export const selectedIcon = new L.Icon({
-  iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
-  iconSize: [35, 55],     // bigger to stand out
-  iconAnchor: [17, 55],   
-  className: "selected-marker", // optional CSS styling
-});
+  return new L.Icon({
+    iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowUrl:
+      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
+    shadowSize: [41, 41],
+  });
+}
