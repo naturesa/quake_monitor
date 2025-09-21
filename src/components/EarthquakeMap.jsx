@@ -23,7 +23,6 @@ function getMagnitudeIcon(mag, isSelected = false) {
   });
 }
 
-// Returns color for magnitude text
 function getMagnitudeColor(mag) {
   if (mag >= 5) return "red";
   if (mag >= 3) return "orange";
