@@ -15,3 +15,12 @@ Click a list item to highlight the earthquake on the map.
 
 ## Data Source
 USGS Earthquake API
+
+## Documentation
+- [Assumptions & Limitations](docs/ASSUMPTIONS.md)  
+- [Design Notes](docs/DESIGN_NOTES.md)  
+
+## Visuals 
+- [Home screen](docs/home.png)
+
+- [Screen recording](docs/screenrecording.mov)

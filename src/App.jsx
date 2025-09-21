@@ -27,7 +27,7 @@ function App() {
         <small>Data Source: USGS Earthquake API</small>
       </header>
 
-      <div style={{ flex: 1, display: "flex", width: "100%" }}>
+      <div style={{ flex: 1, display: "flex", minHeight: 0 }}>
 
         <div
           style={{
@@ -44,7 +44,7 @@ function App() {
           />
         </div>
 
-        <div style={{ flex: 2, height: "80vh" }}>
+        <div style={{ flex: 2, minHeight: 0 }}>
           <EarthquakeMap earthquakes={data} selected={selected} />
         </div>
       </div>
