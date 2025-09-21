@@ -1,35 +1,35 @@
-Design Notes
+# Design Notes
 
-Tech Choices
+## Tech Choices
 
-Used React for state management and component-based structure.
+- Used React for state management and component-based structure.
 
-Chose Leaflet with react-leaflet for the map because it’s simple and works well with React.
+- Chose Leaflet with react-leaflet for the map because it’s simple and works well with React.
 
-Layout
+## Layout
 
-Header at the top with title and data source.
+- Header at the top with title and data source.
 
-List of earthquakes on the left (about 1/3 width) and map on the right (about 2/3).
+- List of earthquakes on the left (about 1/3 width) and map on the right (about 2/3).
 
-Both list and map scroll independently to keep the interface usable.
+- Both list and map scroll independently.
 
-Visual Cues
+## Visual Cues
 
-Marker colors match earthquake magnitude: green (<3), orange (3–5), red (>5).
+- Marker colors match earthquake magnitude: green (<3), orange (3–5), red (>5).
 
-Clicking a list item highlights the corresponding marker.
+- Clicking a list item highlights the corresponding marker.
 
-Magnitude values in the list also use the same colors.
+- Magnitude values in the list also use the same colors.
 
-Data Handling
+## Data Handling
 
-Fetches real-time data from the USGS API.
+- Fetches real-time data from the USGS API.
 
-Selected earthquake stored in state to control map highlighting.
+- Selected earthquake stored in state to control map highlighting.
 
-Styling
+## Styling
 
-Minimal, functional styling for clarity.
+- Minimal, functional styling for clarity.
 
-Responsive design not fully implemented yet — mostly works on desktop.
+- Responsive design not fully implemented yet — mostly works on desktop.
