@@ -1,17 +1,17 @@
-<<<<<<< HEAD
-# React + Vite
+# Earthquake Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app that displays recent earthquakes from the USGS API on a map and list.  
+Click a list item to highlight the earthquake on the map.  
 
-Currently, two official plugins are available:
+## Features
+- Interactive Leaflet map
+- Colored markers by magnitude
+- Responsive design for desktop and mobile
+- Popups with location, magnitude, and date/time
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup
+1. `npm install`  
+2. `npm run dev`  
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# quake_monitor
-Real-time earthquake monitoring system for visualization and analysis of natural disasters.
->>>>>>> da87213b5490f4b52fd7d299042c85810a4228f7
+## Data Source
+USGS Earthquake API

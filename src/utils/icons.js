@@ -3,7 +3,7 @@ import L from "leaflet";
 export function getMagnitudeIcon(mag) {
   let color = "blue";
   if (mag >= 5) color = "red";
-  else if (mag >= 3) color = "orange";
+  else if (mag >= 3) color = "gold";
   else color = "yellow";
 
   return new L.Icon({

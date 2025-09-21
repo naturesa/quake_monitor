@@ -23,12 +23,12 @@ function App() {
           borderBottom: "1px solid #ccc",
         }}
       >
-        <h1 style={{ margin: 0, fontSize: "20px" }}>🌍 Earthquake Dashboard</h1>
+        <h1 style={{ margin: 0, fontSize: "30px", color: "blue", }}>Quake monitor</h1>
         <small>Data Source: USGS Earthquake API</small>
       </header>
 
       <div style={{ flex: 1, display: "flex", width: "100%" }}>
-        {/* List 1/3 */}
+
         <div
           style={{
             flex: 1,
@@ -44,7 +44,6 @@ function App() {
           />
         </div>
 
-        {/* Map 2/3 */}
         <div style={{ flex: 2, height: "80vh" }}>
           <EarthquakeMap earthquakes={data} selected={selected} />
         </div>
